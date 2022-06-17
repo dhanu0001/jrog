@@ -24,7 +24,7 @@ jobs:
             mvn clean install
       - run:
           name: Install jfrog
-          command: curl -fL https://getcli.jfrog.io | sh
+          command: curl -fL https://getcli.jfrog.io | sh  #BASH
       - run:
           name: Push to Artifactory
           command: |
