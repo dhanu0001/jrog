@@ -20,7 +20,6 @@ jobs:
           command: mvn dependency:go-offline
       - run:
           name: mvn build
-          working_directory: /home/circleci/project/target
           command: |
             mvn clean install
       - run:
