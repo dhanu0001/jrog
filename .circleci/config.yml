@@ -28,10 +28,10 @@ jobs:
       - run:
           name: Push to Artifactory
           command: |
-              ./jfrog config add <named_server_config> --artifactory-url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_APIKEY --interactive=false
-              ./jfrog rt u <path/to/artifact> <artifactory_repo_name> --build-name=<name_you_give_to_build> --build-number=$CIRCLE_BUILD_NUM
-              ./jfrog rt bce <name_you_give_to_build> $CIRCLE_BUILD_NUM
-              ./jfrog rt bp <name_you_give_to_build> $CIRCLE_BUILD_NUM
+              ./jfrog rt config --artifactory-url $ARTIFACTORY_URL --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_APIKEY --interactive=false
+              #./jfrog rt u <path/to/artifact> <artifactory_repo_name> --build-name=<name_you_give_to_build> --build-number=$CIRCLE_BUILD_NUM
+              #./jfrog rt bce <name_you_give_to_build> $CIRCLE_BUILD_NUM
+              #./jfrog rt bp <name_you_give_to_build> $CIRCLE_BUILD_NUM
 workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
