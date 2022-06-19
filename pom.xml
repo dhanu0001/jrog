@@ -22,14 +22,11 @@
     </properties>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
-        </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-26-68-snapshots</name>
+        <url>http://ec2-3-85-87-86.compute-1.amazonaws.com:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository>
     </distributionManagement>
 
     <prerequisites>
