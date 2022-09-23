@@ -24,7 +24,7 @@ jobs:
            curl -fL https://getcli.jfrog.io | sh
            ./jfrog rt u /home/circleci/project/target/artifactory-maven-plugin-3.4.0-javadoc.jar maven --url=https://dhanu0001.jfrog.io/artifactory/maven/ --user anju003@ymail.com --apikey AKCp8nGR5PJPD3fafRswrJvbvts2JDQRfoNzn1gZAkCTWGCsDPGGiegsAFr1G4uJ7i2x5sAjy
            ./jfrog rt dl --user anju003@ymail.com --apikey AKCp8nGR5PJPD3fafRswrJvbvts2JDQRfoNzn1gZAkCTWGCsDPGGiegsAFr1G4uJ7i2x5sAjy -url https://dhanu0001.jfrog.io/artifactory "maven/maven/webapp.war"
-          # ./jfrog rt del --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_API_KEY -url https://saks.jfrog.io/artifactory "cx-mvn-loc-poc-dev/cx-mvn-loc-poc-dev/my-app-2.1-SNAPSHOT.jar"
+           ./jfrog rt del --user anju003@ymail.com --apikey AKCp8nGR5PJPD3fafRswrJvbvts2JDQRfoNzn1gZAkCTWGCsDPGGiegsAFr1G4uJ7i2x5sAjy -url https://dhanu0001.jfrog.io/artifactory "maven/maven/artifactory-maven-plugin-3.4.0-javadoc.jar" 
           # ./jfrog rt del "cx-mvn-loc-poc-dev/cx-mvn-loc-poc-dev/my-app-2.5.0-SNAPSHOT.jar" --url="https://saks.jfrog.io/artifactory/cx-mvn-loc-poc-dev/cx-mvn-loc-poc-dev/my-app-2.5.0-SNAPSHOT.jar"  --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_API_KEY          
           # ./jfrog rt del --spec=cx-mvn-loc-poc-dev/cx-mvn-loc-poc-dev/my-app-2.2-SNAPSHOT.jar --dry-run
           # ./jfrog rt del "cx-mvn-loc-poc-dev/ my-app-2.2-SNAPSHOT.jar" --url="https://saks.jfrog.io/artifactory/cx-mvn-loc-poc-dev/"  --user $ARTIFACTORY_USER --apikey $ARTIFACTORY_API_KEY
